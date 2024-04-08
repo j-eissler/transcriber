@@ -1,8 +1,14 @@
 # transcriber
 Python program that uses AI to transcribe audio.
-
 It uses the [pyannote-audio](https://github.com/pyannote/pyannote-audio) library for diarization (detecting speakers) and [openai-whisper](https://github.com/openai/whisper) for transcription.
 
+# System requirements
+This project was tested on the following hardware:
+- CPU: AMD Ryzen 7 5800H
+- GPU: Nvidia RTX 3060 6GB (Laptop)
+- RAM: 16 GB
+
+The Whisper AI model (medium) requires at least 5GB of VRAM. There is a larger model available which should perform even better but it's 10GB exceeded the size of my GPU VRAM.
 
 # Installation
 1. Create a virtual environment (check https://docs.python.org/3/library/venv.html)
