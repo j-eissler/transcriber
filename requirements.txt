@@ -1,0 +1,4 @@
+pyannote.audio # For AI based diarization
+torch # For running AI models on the GPU
+pydub # For splitting audio files
+openai-whisper # For AI based transcription
