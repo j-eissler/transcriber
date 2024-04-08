@@ -15,7 +15,7 @@ def main():
     working_dir = "temp"
 
     # Spoken language in the audio file. Check https://github.com/openai/whisper for supported languages.
-    language = "de"
+    language = "en"
 
     # Access token to use certain hugging face models. Create one at https://huggingface.co/settings/tokens
     hugging_face_auth_token = "<ADD TOKEN HERE>"
