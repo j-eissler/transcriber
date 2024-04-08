@@ -28,6 +28,10 @@ The Whisper AI model (medium) requires at least 5GB of VRAM. There is a larger m
         ├── .gitignore              
         ├── README.md
         └── requirements.txt
+6. Only .wav files can be transcribed. Use ffmpeg if you want to convert files to .wav.
+    ```
+    ffmpeg -i /path/to/audio_file.mp4 ./recordings/audio_file.wav
+    ```
 
 # Usage
 Once you adjusted all settings in [main.py](src/main.py) you can start the transcription by running [main.py](src/main.py). The resulting transcript file will be placed alongside the audio file.
