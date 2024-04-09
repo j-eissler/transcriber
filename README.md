@@ -3,7 +3,7 @@ Python program that uses AI to transcribe audio.
 It uses the [pyannote-audio](https://github.com/pyannote/pyannote-audio) library for diarization (detecting speakers) and [openai-whisper](https://github.com/openai/whisper) for transcription.
 
 ## Examples
-See [examples](examples/) for an english and a german transcription of a short YouTube video. Generally speaking the results will best in english but the results are still very impressive in other languages.
+See [examples](examples/) for an English and a German transcription of a short YouTube video. Generally speaking the results will best in english but the results are still very impressive in other languages.
 
 ## System requirements
 This project was tested on the following hardware:
