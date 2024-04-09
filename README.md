@@ -19,9 +19,13 @@ The Whisper AI model (medium) requires at least 5GB of VRAM. There is a larger m
     ```
     pip install -r requirements.txt
     ```
-3. Visit https://github.com/pyannote/pyannote-audio and check the installation instructions. The pyannote.audio library should be already installed but it uses gated models so you need to go to huggingface.co and accept their conditions.
-4. Take the huggingface.co access token you created in the previous step and paste it into [main.py](src/main.py).
-5. Setup working directory (temp). This is where temporary files will be stored during the transcription process. You don't need to worry about this aside from debugging. Be aware that this directory will be emptied from time to time so don't store anything important here. I recommend the following project structure to keep the project organized:
+2. If you want to run the AI models on an Nvidia GPU you need to install a different version of the PyTorch library which has cuda support enabled (check [here](https://pytorch.org/get-started/locally/) for more information)
+   ```
+   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+   ```
+4. Visit https://github.com/pyannote/pyannote-audio and check the installation instructions. The pyannote.audio library should be already installed but it uses gated models so you need to go to huggingface.co and accept their conditions.
+5. Take the huggingface.co access token you created in the previous step and paste it into [main.py](src/main.py).
+6. Setup working directory (temp). This is where temporary files will be stored during the transcription process. You don't need to worry about this aside from debugging. Be aware that this directory will be emptied from time to time so don't store anything important here. I recommend the following project structure to keep the project organized:
 
         .
         ├── .venv                   # Python virtual environment
@@ -31,7 +35,7 @@ The Whisper AI model (medium) requires at least 5GB of VRAM. There is a larger m
         ├── .gitignore              
         ├── README.md
         └── requirements.txt
-6. Only .wav files can be transcribed. Use ffmpeg if you want to convert files to .wav.
+7. Only .wav files can be transcribed. Use ffmpeg if you want to convert files to .wav.
     ```
     ffmpeg -i /path/to/audio_file.mp4 ./recordings/audio_file.wav
     ```
