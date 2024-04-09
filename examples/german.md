@@ -1,7 +1,7 @@
 # German example
 Source:
 
-(Microsoft plant Rechenzentren für KI in NRW)[https://youtu.be/XDHA0EyL-jQ?si=TDNcR4K-fUctIjda]
+[Microsoft plant Rechenzentren für KI in NRW](https://youtu.be/XDHA0EyL-jQ?si=TDNcR4K-fUctIjda)
 
 Transcript:
 
